@@ -18,6 +18,7 @@
         }
         public static int GetNewId()
         {
+            if (Items.Count == 0) return 1;
             return Items.Max(x => x.Id) + 1;
         }
     }

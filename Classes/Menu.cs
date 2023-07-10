@@ -15,7 +15,7 @@
         public void GetVaultСontents()
         {
 
-            Console.WriteLine($" Содержимое хранилища склада\n{line}\n 1. Просмотр\n 2. Редактирование\n 3. Назад");
+            Console.Write($" Содержимое хранилища склада\n{line}\n 1. Просмотр\n 2. Редактирование\n 3. Назад\n{line}\n Ввод: ");
         }
         public void GetExpectedDeliveries()
         {
@@ -29,8 +29,8 @@
         }
         public void GetAllItems(IEnumerable<StorageItem> storageItems)
         {
-            Console.Clear();
-            Console.WriteLine("\n Все предметы в хранении на складе сейчас:\n\n");
+            Console.Clear(); /*\n Все предметы в хранении на складе сейчас:*/
+            Console.WriteLine($"\n № |  Название продукта  |  Количество\n{line}");
             foreach (var item in storageItems)
             {
                 Console.WriteLine($" {item.Id} | {item.Title} | {item.Amount}");
@@ -46,7 +46,7 @@
         }
         public void GetPlusOrMinusItem()
         {
-            Console.Write("\n Введите наименование предмета: ");
+            Console.Write("\n Введите номер предмета: ");
         }
         public int GetPageStorage(StorageItem item)
         {

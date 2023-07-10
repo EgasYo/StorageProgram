@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfStorageItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfStorageItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StorageItem>
+    <Id>1</Id>
+    <Title>Видеокарта MSI GeForce GTX 1650 Super</Title>
+    <Amount>5</Amount>
+  </StorageItem>
+  <StorageItem>
+    <Id>2</Id>
+    <Title>Видеокарта Nvidia GeForce GTX 1650</Title>
+    <Amount>10</Amount>
+  </StorageItem>
+</ArrayOfStorageItem>

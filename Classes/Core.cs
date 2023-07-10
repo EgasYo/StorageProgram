@@ -54,6 +54,7 @@
                     string newItem = Console.ReadLine();
                     Menu.GetNumberOfItems(newItem);
                     int newNumberItems = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
                     Storage.Add(new StorageItem { Title = newItem, Amount = newNumberItems });
                     LoadOrSaveXML.SaveXML();
                     VaultСontentsEntering();
@@ -132,17 +133,20 @@
                 {
                     Storage.Remove(itemToRemove);
                     LoadOrSaveXML.SaveXML();
-                    Console.WriteLine("\n Элемент успешно удален.");
+                    Console.Clear();
+                    Console.WriteLine("\n Элемент успешно удален\n\n");
                 }
                 else
                 {
-                    Console.WriteLine(" Ошибка: Элемент с указанным ID не найден.");
+                    Console.Clear();
+                    Console.WriteLine("\n Ошибка: Элемент с указанным ID не найден");
                 }
                 VaultСontentsEntering();
             }
             else
             {
-                Console.WriteLine(" Ошибка: Введите целочисленный ID элемента.");
+                Console.Clear();
+                Console.WriteLine("\n Ошибка: Введите целочисленный ID элемента");
                 VaultСontentsEntering();
             }
         }
